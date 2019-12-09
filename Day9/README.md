@@ -35,3 +35,5 @@ Hva er summen av alle Krampustallene i [denne listen](./krampus.txt)?
 ## Løsning
 
 Løsning sendt inn 15:30 med svaret 445372.
+
+Løsningsdikusjoner: https://gist.github.com/knowitkodekalender/131dd01463764c1d74ef7b1b9f87f623
