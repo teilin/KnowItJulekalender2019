@@ -32,25 +32,36 @@ func sumIntList(list []int64) int64 {
 	return sum
 }
 
-func krumpusSplit(number int64, splitIndex int) bool {
-	numberStr := string(number)
+func krumpusSplit(n int64, number int64, splitIndex int) bool {
+	numberStr := strconv.FormatInt(number, 10)
+
+	if splitIndex > len(numberStr) {
+		return false
+	}
 
 	a := numberStr[0:splitIndex]
 	b := numberStr[splitIndex:len(numberStr)]
 
 	if aNum, parseAError := strconv.ParseInt(a, 10, 64); parseAError == nil {
 		if bNum, parseBError := strconv.ParseInt(b, 10, 64); parseBError == nil {
-			if aNum+bNum == number {
+			if aNum == 0 || bNum == 0 {
+				return krumpusSplit(n, number, splitIndex+1)
+			}
+			if aNum+bNum == n {
+				fmt.Println("N = " + strconv.FormatInt(n, 10))
+				fmt.Println("Number = " + strconv.FormatInt(number, 10))
+				fmt.Println("A = " + strconv.FormatInt(aNum, 10))
+				fmt.Println("B = " + strconv.FormatInt(bNum, 10))
 				return true
 			} else {
-				if len(numberStr) == splitIndex {
+				if len(numberStr)-1 == splitIndex {
 					return false
 				}
-				return krumpusSplit(number, splitIndex+1)
+				return krumpusSplit(n, number, splitIndex+1)
 			}
 		}
 	}
-	return true
+	return krumpusSplit(n, number, splitIndex+1)
 }
 
 func isKrumpusTall(n string) (int64, bool) {
@@ -59,7 +70,7 @@ func isKrumpusTall(n string) (int64, bool) {
 	if v, parseErr := strconv.ParseInt(n, 10, 64); parseErr == nil {
 		number = v
 		nsquared = v * v
-		isKrumpus := krumpusSplit(nsquared, 1)
+		isKrumpus := krumpusSplit(number, nsquared, 1)
 		if isKrumpus {
 			return number, isKrumpus
 		}
@@ -79,7 +90,6 @@ func main() {
 	for _, input := range data {
 		n, isKrumpusNumber := isKrumpusTall(input)
 		if isKrumpusNumber {
-			fmt.Println(n)
 			krumpusNumbers = append(krumpusNumbers, n)
 		}
 	}
