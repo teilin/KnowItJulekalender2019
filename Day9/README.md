@@ -30,4 +30,4 @@ Selv om a + b = 100 + 0 = 100, er ikke 100 et Krampustall, fordi ingen av tallen
 
 ## Oppgave
 
-Hva er summen av alle Krampustallene i denne listen?
+Hva er summen av alle Krampustallene i [denne listen](./krampus.txt)?
