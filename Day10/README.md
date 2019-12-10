@@ -12,4 +12,6 @@ I denne [*loggfilen*](./logg.txt) ser vi forbruket til Peter for 2018. Svaret vi
 
 # Løsning
 
-Løsningen submitet og korrekt: 1888326000
+Løsningen submitet og korrekt: 1888326000.
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/040417a530fd1ec76329d78bbf1e0143
