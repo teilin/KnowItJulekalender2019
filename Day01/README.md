@@ -21,3 +21,9 @@ Dag 7 - Dragen spiser for lite mat og krymper en størrelse.
 Dag 8 - Dragen spiser for lite mat for femte dag på rad og spiser alle.
 
 Befolkningen på øya overlevde altså i 7 dager.
+
+# Løsning
+
+Denne løsningen har jeg gjort i ettertid. Ville gjøre oppgavene selvom jeg fant de etter at de ble tilgjengelig.
+
+De overlever i 7602 dager.
