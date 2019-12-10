@@ -11,3 +11,5 @@ Peter Meter registrerer alt han bruker nitidig. På badet bruker han alltid den 
 I denne [*loggfilen*](./logg.txt) ser vi forbruket til Peter for 2018. Svaret vi skal frem til er produktet av følgende 5 tall: * Antall hele tuber tannkrem brukt i 2018. * Antall hele flasker sjampo brukt i 2018. * Antall hele toalettruller brukt i 2018. * Antall milliliter sjampo brukt på søndager. * Antall meter toalettpapir brukt på onsdager.
 
 # Løsning
+
+Løsningen submitet og korrekt: 1888326000

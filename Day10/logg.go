@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"regexp"
 	"strconv"
@@ -54,11 +53,11 @@ func main() {
 
 	re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
 
-	var numTubesToothpaste float64 = 0
-	var numShampooBottles float64 = 0
-	var numToiletRolls float64 = 0
-	var usedShampooSunday float64 = 0
-	var usedToiletPapirWednesday float64 = 0
+	var mlUsedToothpaste int = 0
+	var mlUsedShampoo int = 0
+	var mUsedToiletpaper int = 0
+	var usedShampooSunday int = 0
+	var usedToiletPapirWednesday int = 0
 
 	var weekDay time.Weekday
 	var index int = 0
@@ -74,33 +73,29 @@ func main() {
 		} else {
 			input := scanner.Text()
 			inputType := GetType(input)
-			i, _ := strconv.ParseFloat(re.FindString(scanner.Text()), 32)
-			//fmt.Println(inputType + " => " + input + " => " + FloatToString(i))
+			i, _ := strconv.Atoi(re.FindString(scanner.Text()))
 			if inputType == "toalettpapir" {
-				// Toalettpapir
-				numToiletRolls += (i / 25)
+				mUsedToiletpaper += i
 				if weekDay == time.Wednesday {
 					usedToiletPapirWednesday += i
 				}
 			}
 			if inputType == "sjampo" {
-				numShampooBottles += (i / 300.0)
+				mlUsedShampoo += i
 				if weekDay == time.Sunday {
 					usedShampooSunday += i
 				}
 			}
 			if inputType == "tannkrem" {
-				numTubesToothpaste += (i / 125)
+				mlUsedToothpaste += i
 			}
 		}
 		index += 1
 	}
 
-	fmt.Println(math.Ceil(numTubesToothpaste))
-	fmt.Println(math.Ceil(numShampooBottles))
-	fmt.Println(math.Ceil(numToiletRolls))
-	fmt.Println(usedShampooSunday)
-	fmt.Println(usedToiletPapirWednesday)
+	var usedToothpased int = mlUsedToothpaste / 125
+	var usedShampoo int = mlUsedShampoo / 300
+	var usedToiletPaper int = mUsedToiletpaper / 25
 
-	fmt.Println(math.Ceil(numTubesToothpaste) * math.Ceil(numShampooBottles) * math.Ceil(numToiletRolls) * usedShampooSunday * usedToiletPapirWednesday)
+	fmt.Println(usedToothpased * usedShampoo * usedToiletPaper * usedShampooSunday * usedToiletPapirWednesday)
 }
