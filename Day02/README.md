@@ -27,3 +27,9 @@ Svar: 4
 ##~##
 #####
 ```
+
+# Løsningen
+
+Denne fikk jeg ikke sendt inn på tiden, gikk derfor igjennom denne i ettertid.
+
+Løsningen fra programmet: 29564
