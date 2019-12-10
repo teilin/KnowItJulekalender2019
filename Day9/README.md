@@ -9,7 +9,7 @@ Et Krampustall er definert som et tall n der produktet av n*n (n2) kan splittes 
 ```
 n = 45
 
-452 = 2025
+45<sup>2</sup> = 2025
 
 2025 kan splittes til a = 20 og b = 25.
 
@@ -21,7 +21,7 @@ a + b = n
 
 n = 100
 
-1002 = 10000
+100<sup>2</sup> = 10000
 
 10000 kan splittes til a = 100 og b = 00.
 
@@ -31,3 +31,9 @@ Selv om a + b = 100 + 0 = 100, er ikke 100 et Krampustall, fordi ingen av tallen
 ## Oppgave
 
 Hva er summen av alle Krampustallene i [denne listen](./krampus.txt)?
+
+## Løsning
+
+Løsning sendt inn 15:30 med svaret 445372.
+
+Løsningsdikusjoner: https://gist.github.com/knowitkodekalender/131dd01463764c1d74ef7b1b9f87f623
