@@ -6,11 +6,14 @@ For å rekke frem til alle barn hele verden går sleden til julenissen i 1070343
 
 De forskjellige terrengene har ulik innvirkning på farten til sleden, og er som følger:
 
-> G = gress. Senker farten til sleden med 27km/t
-> I = is. Øker farten til sleden med 12km/t * antall isområder på rad
-> A = asfalt. Senker farten til sleden med 59km/t
-> S = skog. Senker farten til sleden med 212km/t
-> F = fjell. Kommer alltid i par, der den første er oppover som senker farten med 70km/t mens den andre er nedoverbakke som øker farten med 35km/t.
+```
+G = gress. Senker farten til sleden med 27km/t
+I = is. Øker farten til sleden med 12km/t * antall isområder på rad
+A = asfalt. Senker farten til sleden med 59km/t
+S = skog. Senker farten til sleden med 212km/t
+F = fjell. Kommer alltid i par, der den første er oppover som senker farten med 70km/t mens den andre er nedoverbakke som øker farten med 35km/t.
+```
+
 Hvert terreng forekommer i lengder på 1 km.
 
 ## Eksempel
