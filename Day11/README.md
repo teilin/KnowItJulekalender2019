@@ -35,3 +35,9 @@ Sleden stopper etter å ha kjørt 11 kilometer.
 
 Oppgave
 Hvor mange kilometer kjører nissen med sleden sin før den stopper gitt [følgende landingsstripe](./terreng.txt)?
+
+## Løsning
+
+Sleden stopper etter 202128 km.
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/ba6dc0c72f1656677786ad96fb0ecd4c
