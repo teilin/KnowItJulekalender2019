@@ -4,9 +4,10 @@ Av: Sverre Johann Bjørke
 
 Talet 6174 har ein unik eigenskap. For alle tal fom. 1000, tom. 9999, der minst to siffer er ulike (ikkje 1111, 2222 osv) endar ein alltid opp med 6174 om ein følger denne prosedyra:
 
-Lag to nye tal ved å sortere siffera i stigande og synkande rekkefølge.
-Trekk det minste av dei nye tala frå det største. Du endar no opp med eit nytt tal.
-Start på nytt på steg 1 med det nye talet.
+* Lag to nye tal ved å sortere siffera i stigande og synkande rekkefølge.
+* Trekk det minste av dei nye tala frå det største. Du endar no opp med eit nytt tal.
+* Start på nytt på steg 1 med det nye talet.
+
 Før eller seinare endar ein opp med 6174, som vil gi oss 7641 – 1467 = 6174 og vi er fanga i ei sløyfe.
 
 ## Eksempel
