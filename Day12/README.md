@@ -24,3 +24,9 @@ For 1000 når vi altså 6174 etter 5 iteresjonar.
 ## Oppgåve
 
 På det meste tek det 7 iterasjonar å nå 6174 for alle tal som definert i starten av teksten her. For kor mange av dei tala er det nødvendig med 7 iterasjonar?
+
+## Løsning
+
+Min løsning 1980
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/700750ce24d8dd81b0436a07cf364e53
