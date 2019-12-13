@@ -24,3 +24,9 @@ Eit enkelt rom i labyrinten har følgande eigenskapar:
 ## Spørsmål
 
 Kor mange færre rom besøkte vinnarroboten?
+
+## Løsning
+
+Vinneren besøker **??** færre rom enn taperen.
+
+Diskusjonstråden: xxx
