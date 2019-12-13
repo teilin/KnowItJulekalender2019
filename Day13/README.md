@@ -2,7 +2,7 @@
 
 Av: Sverre Johann Bjørke
 
-Til jul har Arthur og Isaac fått kvar sin robot som kan programmerast til å løyse labyrintar. Dei programerar inn to ganske like strategiar, og set robotane til å løyse denne labyrinten (zippet) på 500x500 rom. Begge startar i rom (0,0), og målet er i rom (499, 499)
+Til jul har Arthur og Isaac fått kvar sin robot som kan programmerast til å løyse labyrintar. Dei programerar inn to ganske like strategiar, og set robotane til å løyse [denne labyrinten (zippet)](./maze.txt.zip) på 500x500 rom. Begge startar i rom (0,0), og målet er i rom (499, 499)
 
 Arthur har følgande strategi:
 
