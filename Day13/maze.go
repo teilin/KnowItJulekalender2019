@@ -7,32 +7,37 @@ import (
 )
 
 type Maze struct {
-	x      int  `json: "x"`
-	y      int  `json: "y"`
-	top    bool `json: "top"`
-	left   bool `json: "left"`
-	bottom bool `json: "bottom"`
-	right  bool `json: "right"`
+	X      int  `json:"x"`
+	Y      int  `json:"y"`
+	Top    bool `json:"top"`
+	Left   bool `json:"left"`
+	Bottom bool `json:"bottom"`
+	Right  bool `json:"right"`
 }
 
-type MazeNodes struct {
-	Nodes []Maze
+type Coor struct {
+	X int
+	Y int
 }
 
 var (
-	maze []Maze = make([]Maze, 500)
+	maze   [][]Maze
+	arthur []Coor
+	issac  []Coor
 )
 
-func readInput(path string) {
+func readInput(path string) error {
 	file, _ := ioutil.ReadFile(path)
 
-	data := MazeNodes{}
-
-	_ = json.Unmarshal([]byte(file), &data)
-
-	for i := 0; i < len(data.Nodes); i++ {
-		fmt.Println("x=", data.Nodes[i].x)
+	jsonError := json.Unmarshal([]byte(file), &maze)
+	if jsonError != nil {
+		fmt.Println("Error happend json", jsonError)
 	}
+	return jsonError
+}
+
+func isValidMove(position Coor) bool {
+	return true
 }
 
 func main() {
