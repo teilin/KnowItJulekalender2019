@@ -30,6 +30,6 @@ Svar: 0.167
 
 ## Løsning
 
-Svar: XX
+Svar: 7.302
 
-Diskusjonstråd: 
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/87d1b4e06be8038f00f263b0604d056f

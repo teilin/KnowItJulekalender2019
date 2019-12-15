@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -17,8 +16,11 @@ type Decor struct {
 	Edge1, Edge2, Edge3 Coordinate
 }
 
-func string2Fload(number string) float64 {
-	f, _ := strconv.ParseFloat(number, 32)
+func string2Float(number string) float64 {
+	f, parseError := strconv.ParseFloat(number, 32)
+	if parseError != nil {
+		fmt.Println("Parsing string to float failed", parseError)
+	}
 	return f
 }
 
@@ -34,19 +36,19 @@ func readLines(path string) (map[int]Decor, error) {
 	for scanner.Scan() {
 		tmp := strings.Split(scanner.Text(), ",")
 		edge1 := &Coordinate{
-			X: string2Fload(tmp[0]),
-			Y: string2Fload(tmp[1]),
-			Z: string2Fload(tmp[2]),
+			X: string2Float(tmp[0]),
+			Y: string2Float(tmp[1]),
+			Z: string2Float(tmp[2]),
 		}
 		edge2 := &Coordinate{
-			X: string2Fload(tmp[3]),
-			Y: string2Fload(tmp[4]),
-			Z: string2Fload(tmp[5]),
+			X: string2Float(tmp[3]),
+			Y: string2Float(tmp[4]),
+			Z: string2Float(tmp[5]),
 		}
 		edge3 := &Coordinate{
-			X: string2Fload(tmp[6]),
-			Y: string2Fload(tmp[7]),
-			Z: string2Fload(tmp[8]),
+			X: string2Float(tmp[6]),
+			Y: string2Float(tmp[7]),
+			Z: string2Float(tmp[8]),
 		}
 		decor := Decor{
 			Edge1: *edge1,
@@ -74,18 +76,17 @@ func (coor1 Coordinate) dotProduct(coor2 Coordinate) float64 {
 func massCalulation(decors map[int]Decor) float64 {
 	var sum float64
 	for _, value := range decors {
-		sum += math.Abs(value.Edge1.crossProduct(value.Edge2).dotProduct(value.Edge3)) / 6
+		sum += (value.Edge1.crossProduct(value.Edge2).dotProduct(value.Edge3) / 6) / 1000
 	}
 	return sum
 }
 
 func main() {
-	decorArray, readFileError := readLines("./EXAMPLE.csv")
+	decorArray, readFileError := readLines("./MODEL.csv")
 	if readFileError != nil {
 		fmt.Println("Read file error")
 	}
 	sum := massCalulation(decorArray)
 
 	fmt.Println(sum)
-	fmt.Println(sum / 1000.0)
 }
