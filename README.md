@@ -22,7 +22,7 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | [Day 12: 6174](https://julekalender.knowit.no/doors/ck417qqxweuxl0109wpvym4g9) | Go | :santa: | Yes |
 | [Day 13: The A-maze-ing Race](https://julekalender.knowit.no/doors/ck433vam5fn1h0109s2udvjgj) | Go |  | No |
 | [Day 14: Alvesekvens](https://julekalender.knowit.no/doors/ck44948smg2px01096ifl05f4) | Go | :santa: | Yes |
-| Day 15: |  |  |  |
+| [Day 15: 3D-pynt](https://julekalender.knowit.no/doors/ck468jznjgvry0109ri4x89qg) | Go | :santa: | Yes |
 | Day 16:  |  |  |  |
 | Day 17:  |  |  |  |
 | Day 18:  |  |  |  |
