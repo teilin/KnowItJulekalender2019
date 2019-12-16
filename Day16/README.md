@@ -59,6 +59,6 @@ Og Birte ender med 5 kryssinger.
 
 ## Løsning
 
-Antall krysninger: XX
+Antall krysninger: 117
 
-Diskusjonstråd: 
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/6fbb4d657be69b28e71add6cc9c6ffdb

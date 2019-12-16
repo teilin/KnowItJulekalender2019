@@ -6,37 +6,57 @@ import (
 	"os"
 )
 
+type Point struct {
+	X, Y int
+}
+
 var (
-	countCrossing int = 0
+	countCrossing int = 1
 	fjord         [][]rune
-	X, Y          int
-	goNorth       bool = true
+	location      Point
+	direction     Point = Point{X: 1, Y: -1}
+	xlength       int   = 0
 )
+
+func elementExists(coordinate Point) bool {
+	if coordinate.Y >= 0 && coordinate.Y < len(fjord) {
+		if coordinate.X >= 0 && coordinate.X < len(fjord[coordinate.Y]) {
+			return true
+		} else {
+			return false
+		}
+	} else {
+		return false
+	}
+}
+
+func (current Point) CalcNextStep() Point {
+	return Point{
+		X: current.X + direction.X,
+		Y: current.Y + direction.Y,
+	}
+}
+
+func GetNextStep() {
+	var threeStepAhead = location.CalcNextStep().CalcNextStep().CalcNextStep()
+	if elementExists(threeStepAhead) {
+		if string(fjord[threeStepAhead.Y][threeStepAhead.X]) == "#" {
+			direction = Point{X: direction.X, Y: direction.Y * -1}
+			countCrossing += 1
+			location = Point{X: location.X + 1, Y: location.Y}
+		} else {
+			location = location.CalcNextStep()
+		}
+	} else {
+		location = location.CalcNextStep()
+	}
+}
 
 func sail() {
 	for {
-		if goNorth {
-			if string(fjord[Y-3][X+1]) == "#" {
-				goNorth = false
-				countCrossing += 1
-				X += 1
-				Y += 1
-			} else {
-				X += 1
-				Y -= 1
-			}
-		} else {
-			if string(fjord[Y+3][X+3]) == "#" {
-				goNorth = true
-				countCrossing += 1
-				X += 1
-				Y -= 1
-			} else {
-				X += 1
-				Y += 1
-			}
-		}
-		if len(fjord[Y])-1 == X {
+		GetNextStep()
+
+		if location.X == xlength {
 			break
 		}
 	}
@@ -56,16 +76,17 @@ func main() {
 		fjord = append(fjord, []rune(scanner.Text()))
 	}
 
+	xlength = len(fjord[0])
+
 	for index, _ := range fjord {
 		for index2, value2 := range fjord[index] {
 			if string(value2) == "B" {
-				Y = index
-				X = index2
+				location.X = index2
+				location.Y = index
 			}
 		}
 	}
 
 	sail()
-
 	fmt.Println(countCrossing)
 }
