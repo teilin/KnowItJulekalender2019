@@ -21,14 +21,20 @@ func numberOfDigits(n int) int {
 	return cnt
 }
 
-func leftRotate(num int) int {
+func leftRotate(num int) []int {
 	digits := numberOfDigits(num)
+	var iSlice []int = make([]int, digits)
 	pow10 := int(math.Pow10(digits - 1))
-	firstDigit := num / pow10
-	return ((num * 10) + firstDigit) - (firstDigit * pow10 * 10)
+	for i := 0; i < digits; i++ {
+		firstDigit := num / pow10
+		left := ((num * 10) + firstDigit) - (firstDigit * pow10 * 10)
+		num = left
+		iSlice[i] = left
+	}
+	return iSlice
 }
 
-func calcTriangleNumber(n float64) float64 {
+func calcTriangleNumber(n int) int {
 	return (n * (n + 1)) / 2
 }
 
@@ -37,24 +43,30 @@ func isSquareNumber(n float64) bool {
 	return ((sr - math.Floor(sr)) == 0)
 }
 
-func isSquareNumberWithRotation(n float64, numTries int) {
+func isSquareNumberWithRotation(n float64) {
 	isSquare := isSquareNumber(n)
 
 	if isSquare {
 		countSquareNumbers += 1
 	}
 
-	if isSquare == false && numTries > 0 {
+	if isSquare == false {
 		i := int(n)
-		i = leftRotate(i)
-		isSquareNumberWithRotation(float64(i), numTries-1)
+		iLeft := leftRotate(i)
+		for _, v := range iLeft {
+			isSquare = isSquareNumber(float64(v))
+			if isSquare {
+				countSquareNumbers += 1
+				break
+			}
+		}
 	}
 }
 
 func main() {
 	for i := 0; i <= 1000000; i++ {
-		triNum := calcTriangleNumber(float64(i))
-		isSquareNumberWithRotation(triNum, numberOfDigits(int(triNum)))
+		triNum := calcTriangleNumber(i)
+		isSquareNumberWithRotation(float64(triNum))
 	}
 	fmt.Println(countSquareNumbers)
 }

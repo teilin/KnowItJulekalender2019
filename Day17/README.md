@@ -11,3 +11,9 @@ Eit tal kan sjølvsagt rullerast meir enn ein gong: 1230 -> 0123 -> 3012 -> 2301
 [Kvadrattal](https://oeis.org/wiki/Square_numbers) er positive heiltal som oppstår når tal gangast med seg sjølv.
 
 Kor mange av dei 1 000 000 første trekanttala er også kvadrattal, eller kan rullerast til å bli det?
+
+## Løsning
+
+Svaret er: 74
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/30d49c818bffc202c8b9b2a75ba671dc
