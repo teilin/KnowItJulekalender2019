@@ -21,6 +21,7 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | [Day 11: Sledestans](https://julekalender.knowit.no/doors/ck4006l3gefub0109eto9igva) | Go | :santa: | Yes |
 | [Day 12: 6174](https://julekalender.knowit.no/doors/ck417qqxweuxl0109wpvym4g9) | Go | :santa: | Yes |
 | [Day 13: The A-maze-ing Race](https://julekalender.knowit.no/doors/ck433vam5fn1h0109s2udvjgj) | Go |  | No |
+| <td colspan=4> Mye annet program denne dagen og rakk ikke å fullføre oppgaven før innsendingen stengte. |
 | [Day 14: Alvesekvens](https://julekalender.knowit.no/doors/ck44948smg2px01096ifl05f4) | Go | :santa: | Yes |
 | [Day 15: 3D-pynt](https://julekalender.knowit.no/doors/ck468jznjgvry0109ri4x89qg) | Go | :santa: | Yes |
 | [Day 16: Seilkryss](https://gist.github.com/knowitkodekalender/6fbb4d657be69b28e71add6cc9c6ffdb) | Go | :santa: | Yes |
