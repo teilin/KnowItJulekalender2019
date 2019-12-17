@@ -7,7 +7,7 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 # Oppsummering
 
 | Puzzle        | Language | Solution | Submitted |
-| ------------- |:---:|:-------------:| **:-----:**|
+| ------------- |:---:|:-------------:| :-----:|
 | [Day 1: Drageproblemer](https://julekalender.knowit.no/doors/ck3ln1prramud0109sqetdk7g) | Go | :santa: | :end: |
 | [Day 2: Syndefloden](https://julekalender.knowit.no/doors/ck3n9yxzraz7h0109wu72kzoo) | Go | :santa: | :end: |
 | [Day 3: Flate pakker er også pakker](https://julekalender.knowit.no/doors/ck3naau5qaza901092kpj4a40) |  |  | :end: |
