@@ -26,3 +26,9 @@ For Jan,Johannsen,M:
   * 421624500 sortert blir 654422100. 654422100 modulo 26 = 20. Indeks 20 gir verse
 
 Jan Johannsen blir dermed Poe Lightverse.
+
+## Løsning
+
+Svar: Mest brukte Star Wars navnet blir **Malkili Death fire**
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/428527fe837f3513c8861cf7eb6ff8a3
