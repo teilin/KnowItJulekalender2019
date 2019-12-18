@@ -25,7 +25,7 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | [Day 15: 3D-pynt](https://julekalender.knowit.no/doors/ck468jznjgvry0109ri4x89qg) | Go | :santa: | :heavy_check_mark: |
 | [Day 16: Seilkryss](https://gist.github.com/knowitkodekalender/6fbb4d657be69b28e71add6cc9c6ffdb) | Go | :santa: | :heavy_check_mark: |
 | [Day 17: Rullande trekantar](https://julekalender.knowit.no/doors/ck48plyxehtde01096odswazu) | Go | :santa: | :heavy_check_mark: |
-| Day 18:  |  |  |  |
+| [Day 18: Use the hash, you must!](https://julekalender.knowit.no/doors/ck4aavofkip2s0109opvkpqvk) | Go | :santa: | :heavy_check_mark: |
 | Day 19:  |  |  |  |
 | Day 20:  |  |  |  |
 | Day 21:  |  |  |  |
