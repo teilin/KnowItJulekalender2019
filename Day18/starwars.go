@@ -214,39 +214,19 @@ func main() {
 	readStarWarsNames("./names.txt")
 
 	var starWarsNames map[string]int = make(map[string]int)
+	var mostUsedName string
+	var mostUsedNameCount int = 0
 
 	for _, employee := range employees {
 		starWarsFirstName := firstName2StarWarsName(employee)
 		starWarsLastName1, starWarsLastName2 := lastName2StarWarsName(employee)
 
-		name := fmt.Sprintf("%s %s %s", starWarsFirstName, starWarsLastName1, starWarsLastName2)
-		exists := starWarsNames[name]
-		if exists == 0 {
-			starWarsNames[name] = 1
-		} else {
-			starWarsNames[name] = starWarsNames[name] + 1
+		name := fmt.Sprintf("%s %s%s", starWarsFirstName, starWarsLastName1, starWarsLastName2)
+		starWarsNames[name]++
+		if starWarsNames[name] > mostUsedNameCount {
+			mostUsedNameCount = starWarsNames[name]
+			mostUsedName = name
 		}
 	}
-
-	type kv struct {
-		Key   string
-		Value int
-	}
-
-	var ss []kv
-	for k, v := range starWarsNames {
-		ss = append(ss, kv{k, v})
-	}
-
-	sort.Slice(ss, func(i, j int) bool {
-		return ss[i].Value > ss[j].Value
-	})
-
-	var winner int = 1
-	for _, kv := range ss {
-		if winner == 1 {
-			fmt.Printf("%s, %d\n", kv.Key, kv.Value)
-		}
-		winner += 1
-	}
+	fmt.Println(mostUsedName)
 }
