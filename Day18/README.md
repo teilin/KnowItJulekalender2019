@@ -29,6 +29,6 @@ Jan Johannsen blir dermed Poe Lightverse.
 
 ## Løsning
 
-Svar: Mest brukte Star Wars navnet blir **Malkili Death fire**
+Svar: Mest brukte Star Wars navnet blir **Malkili Deathfire**
 
 Diskusjonstråd: https://gist.github.com/knowitkodekalender/428527fe837f3513c8861cf7eb6ff8a3
