@@ -27,7 +27,7 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | [Day 17: Rullande trekantar](https://julekalender.knowit.no/doors/ck48plyxehtde01096odswazu) | Go | :santa: | :heavy_check_mark: |
 | [Day 18: Use the hash, you must!](https://julekalender.knowit.no/doors/ck4aavofkip2s0109opvkpqvk) | Go | :santa: | :heavy_check_mark: |
 | [Day 19: Skjulte palindromer](https://julekalender.knowit.no/doors/ck4bh0tg6j4ad01094q2sa5zz) | Go | :santa: | :heavy_check_mark: |
-| Day 20:  |  |  |  |
+| [Day 20: Alvene ved det runde bord](https://julekalender.knowit.no/doors/ck4db1wlsjnly010993e8f4r1) | Go | :santa: | :end: |
 | Day 21:  |  |  |  |
 | Day 22:  |  |  |  |
 | Day 23:  |  |  |  |
