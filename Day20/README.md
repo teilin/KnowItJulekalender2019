@@ -39,3 +39,13 @@ De første stegene blir som følger:
 ## Oppgave
 
 Alvenes fagorganisasjon for gavemakere er bekymret for ujevn arbeidsfordeling i gavemakerprossessen. Hva er differansen i antall steg utført mellom den alven som gjorde minst og den alven som gjorde mest?
+
+## Løsning
+
+Laget et program som gikk igjennom og gjorde det som den skulle på hvert steg. Stegene stemmer fint overens med det som er i eksempelet. Svaret jeg får ut er ikke rett. Debugget og debugget, men finner ikke ut hva jeg gjør feil. Antar jeg muligens tolker noe i oppgaven på feil måte. Dette var bare maksimalt irriterende.
+
+Jeg fikk ikke submittet noen rett løsning, men leste over koden andre hadde gjort dagen derpå for å finne ut hva jeg gjorde feil. Det som er i filen nå er en løsning en annen hadde som jeg ønsket å teste for å se og lære av.
+
+Løsning: 22766
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/7a113e547bdd9caafb018b79800975d9
