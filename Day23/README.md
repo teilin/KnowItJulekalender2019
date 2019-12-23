@@ -16,6 +16,6 @@ Hvor mange tall fra 1 til og med 98765432 er Harshadprimtall?
 
 ## Løsning
 
-Svaret er: XX
+Svaret er: 724713
 
-Diskusjonstråd: 
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/65d7a798df1b121148bade6d50b29bde
