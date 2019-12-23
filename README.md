@@ -30,5 +30,5 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | [Day 20: Alvene ved det runde bord](https://julekalender.knowit.no/doors/ck4db1wlsjnly010993e8f4r1) | Go | :santa: | :end: |
 | Day 21:  |  |  |  |
 | Day 22:  |  |  |  |
-| Day 23:  |  |  |  |
+| [Day 23: Harshadprimtall](https://julekalender.knowit.no/doors/ck4hgk351kg7p0109767ub34w) | Go | :santa: | :heavy_check_mark: |
 | Day 24:  |  |  |  |
