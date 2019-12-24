@@ -38,3 +38,9 @@ xxxx
 Dette ser ut som en L
 
 Tusen takk til alle som har deltatt i årets julekalender! God jul og godt nyttår fra alle oss!
+
+## Løsning
+
+Svar: Godjul
+
+Diskusjonstråd: https://gist.github.com/knowitkodekalender/693236687d297830abebef9ce1bc5f52
