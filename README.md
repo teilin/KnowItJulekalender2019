@@ -31,4 +31,4 @@ Dette er mine egne løsninger av KnowIT sin julekalender i 2019.
 | Day 21:  |  |  |  |
 | Day 22:  |  |  |  |
 | [Day 23: Harshadprimtall](https://julekalender.knowit.no/doors/ck4hgk351kg7p0109767ub34w) | Go | :santa: | :heavy_check_mark: |
-| [Day 24: Skitur](https://julekalender.knowit.no/doors/ck4j3clxpkrh50109wr5j07je) | Go | :santa: | Yes |
+| [Day 24: Skitur](https://julekalender.knowit.no/doors/ck4j3clxpkrh50109wr5j07je) | Go | :santa: | :heavy_check_mark: |
